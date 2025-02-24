@@ -16,7 +16,7 @@ const Header = () => {
           <div>
             <Typography
               variant="h1"
-              className="!text-[50px] text-white max-w-[437px] font-extrabold "
+              className="!text-[50px] text-white max-w-[437px] !font-[800]"
             >
               Только самые
               <span className="text-[#FF5C00]"> сочные бургеры!</span>
