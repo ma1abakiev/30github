@@ -1,5 +1,5 @@
 const Filter = () => {
-  return <div>Navigation</div>
+  return <div>Nav</div>
 }
 
 export default Filter
