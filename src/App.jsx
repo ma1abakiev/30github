@@ -1,3 +1,4 @@
+import MyCard from './components/Card'
 import Filter from './components/Filter'
 import Header from './components/Header'
 
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Header></Header>
       <Filter></Filter>
+      <MyCard></MyCard>
     </>
   )
 }
