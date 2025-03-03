@@ -14,7 +14,7 @@ export default function MyCard() {
         <CardMedia component="img" height="140" image={img} alt="burger" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            HAHA
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
             Lizards are a widespread group of squamate reptiles, with over 6,000
