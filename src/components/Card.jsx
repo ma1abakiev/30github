@@ -7,24 +7,32 @@ import CardActionArea from '@mui/material/CardActionArea'
 import CardActions from '@mui/material/CardActions'
 import img from '../assets/img/burgers/1.png'
 
-export default function MyCard() {
+export default function MyCard({ title, text, price, weight }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia component="img" height="140" image={img} alt="burger" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            HAHA
+            {price}₽
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across
+            {title}
           </Typography>
+          <div className="flex justify-start mt-[30px]">
+            <span>{weight}г</span>
+          </div>
         </CardContent>
       </CardActionArea>
+
       <CardActions>
-        <Button size="small" color="primary">
-          Share
+        <Button
+          variant="outlined"
+          size="small"
+          color="primary"
+          className="w-full bg-[#F2F2F3]"
+        >
+          Добавить{' '}
         </Button>
       </CardActions>
     </Card>

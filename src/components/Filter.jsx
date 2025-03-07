@@ -9,7 +9,7 @@ import img7 from '../assets/img/nav/7.png'
 import img8 from '../assets/img/nav/8.png'
 import img9 from '../assets/img/nav/9.png'
 
-const Filter = () => {
+const Filter = ({ setActive }) => {
   const categories = [
     {
       title: 'Бургеры',
@@ -58,6 +58,7 @@ const Filter = () => {
           className="flex items-center gap-[8px] bg-[#c0c0c0]
           py-[9px] px-[14px] rounded-[50px] cursor-pointer"
           style={category.active && { background: '#FFAB08' }}
+          onClick={() => setActive(category.title)}
         >
           <img src={category.img} alt="" />
           <span>{category.title}</span>
