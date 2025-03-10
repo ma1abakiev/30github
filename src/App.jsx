@@ -22,7 +22,7 @@ const App = () => {
     <>
       <Header></Header>
       <Filter active={active} setActive={setActive}></Filter>
-      <CardList data={filteredData}></CardList>
+      <CardList data={filteredData} title={active}></CardList>
     </>
   )
 }
